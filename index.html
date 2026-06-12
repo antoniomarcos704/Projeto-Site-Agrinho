@@ -3,395 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte, Futuro Sustentável - Agricultura Regenerativa</title>
-    <!-- Fonte Inter para visual moderno e tecnológico -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Folha de estilo externa (Conforme critério da banca) -->
+    <title>AgroFuturo - Educação e Sustentabilidade no Campo</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Ícones Lucide via CDN para uma interface moderna -->
-    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-    <!-- ==========================================================================
-       CABECALHO DO SITE
-       ========================================================================== -->
-    <header>
-        <div class="container nav-container">
-            <a href="#" class="logo-group">
-                <span class="logo-icon"><i data-lucide="sprout"></i></span>
-                <span>Agrinho2026</span>
-            </a>
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="#inicio" class="logo">Agro<span class="logo-highlight" data-i18n="logoHighlight">Futuro</span></a>
             
-            <nav class="nav-menu" aria-label="Navegação Principal">
-                <a href="#sobre" class="nav-link" data-translate="nav-about">Sobre</a>
-                <a href="#pilares" class="nav-link" data-translate="nav-pillars">Pilares</a>
-                <a href="#calculadora" class="nav-link" data-translate="nav-calc">Simulador</a>
-                <a href="#contato" class="nav-link" data-translate="nav-contact">Contato</a>
+            <nav class="nav-menu">
+                <a href="#inicio" class="nav-link active-link" data-i18n="navInicio">Início</a>
+                <a href="#sobre" class="nav-link" data-i18n="navSobre">Sobre</a>
+                <a href="#tecnologia" class="nav-link" data-i18n="navTecnologia">Tecnologia</a>
+                <a href="#praticas" class="nav-link" data-i18n="navPraticas">Agricultura Regenerativa</a>
+                <a href="#precisao" class="nav-link" data-i18n="navPrecisao">Agricultura de Precisão</a>
+                <a href="#contato" class="nav-link" data-i18n="navContato">Contato</a>
             </nav>
 
-            <div class="nav-actions">
-                <!-- Seletor de Idiomas (5 Idiomas obrigatórios com Português e Inglês) -->
-                <div class="lang-select-wrapper" title="Alterar idioma / Change language">
-                    <span style="margin-right: 6px; display: flex;"><i data-lucide="languages" style="width: 16px; height: 16px;"></i></span>
-                    <select id="langSelect" class="lang-select" aria-label="Selecione o idioma">
-                        <option value="pt">PT</option>
-                        <option value="en">EN</option>
-                        <option value="es">ES</option>
-                        <option value="fr">FR</option>
-                        <option value="de">DE</option>
-                    </select>
-                    <span class="lang-arrow"><i data-lucide="chevron-down" style="width: 12px;"></i></span>
-                </div>
-
-                <!-- Botão de Alternância de Tema Claro / Escuro -->
-                <button id="themeToggle" class="theme-toggle" aria-label="Alternar entre modo claro e escuro" title="Alternar Tema">
-                    <i data-lucide="moon" id="themeIcon" style="width: 18px; height: 18px;"></i>
+            <div class="nav-controls">
+                <select id="language-selector" class="lang-select">
+                    <option value="pt" selected>PT</option>
+                    <option value="en">EN</option>
+                    <option value="es">ES</option>
+                </select>
+                
+                <button id="theme-toggle" class="theme-btn" aria-label="Alternar Tema">
+                    <span class="icon-sun">☀️</span>
+                    <span class="icon-moon">🌙</span>
                 </button>
             </div>
         </div>
     </header>
 
-    <main>
-        <!-- ==========================================================================
-           HERO SECTION (APRESENTAÇÃO DO TEMA)
-           ========================================================================== -->
-        <section class="hero" id="home">
-            <div class="container hero-grid">
-                <div class="hero-content">
-                    <div class="badge">
-                        <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i>
-                        <span data-translate="hero-badge">Concurso Agrinho 2026</span>
+    <main class="main-content">
+
+        <section id="inicio" class="spa-section active">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/imagens/slide_agricultura_sustentavel.png');">
+                        <div class="slide-content">
+                            <h1 data-i18n="slide1Title">Agricultura Sustentável</h1>
+                            <p data-i18n="slide1Desc">O equilíbrio perfeito entre a produção de alimentos e a preservação do meio ambiente.</p>
+                        </div>
                     </div>
-                    <h1 class="hero-title" id="mainTitle">
-                        <span data-translate="hero-title-1">Agro Forte,</span><br>
-                        <span data-translate="hero-title-2">Futuro Sustentável:</span>
-                    </h1>
-                    <p class="hero-desc" data-translate="hero-desc">
-                        A agricultura generativa revoluciona o equilíbrio entre produção de alimentos em escala e a preservação do meio ambiente. Descubra como revitalizar o solo, restaurar ecossistemas e garantir alta produtividade.
-                    </p>
-                    <div class="hero-cta">
-                        <a href="#calculadora" class="btn btn-primary">
-                            <span data-translate="hero-btn-primary">Testar Simulador</span>
-                            <i data-lucide="arrow-right" style="width: 18px;"></i>
-                        </a>
-                        <a href="#sobre" class="btn btn-secondary" data-translate="hero-btn-secondary">Saber Mais</a>
+                    <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/imagens/slide_tecnologia_campo.png');">
+                        <div class="slide-content">
+                            <h1 data-i18n="slide2Title">Tecnologia no Campo</h1>
+                            <p data-i18n="slide2Desc">Inovações digitais que transformam a gestão e a eficiência da sua lavoura.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/imagens/slide_educacao_conhecimento.png');">
+                        <div class="slide-content">
+                            <h1 data-i18n="slide3Title">Educação e Conhecimento</h1>
+                            <p data-i18n="slide3Desc">Capacitando as novas gerações para liderar o futuro do agronegócio consciente.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/imagens/slide_preservacao_recursos.png');">
+                        <div class="slide-content">
+                            <h1 data-i18n="slide4Title">Preservação de Recursos</h1>
+                            <p data-i18n="slide4Desc">Técnicas avançadas para economizar água e manter o solo sempre fértil.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/imagens/slide_carbono_neutro.png');">
+                        <div class="slide-content">
+                            <h1 data-i18n="slide5Title">Carbono Neutro</h1>
+                            <p data-i18n="slide5Desc">Práticas que reduzem a emissão de gases e combatem as mudanças climáticas.</p>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Ilustração Vetorial Autoral Tecnológica -->
-                <div class="hero-visual">
-                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#10b981" />
-                                <stop offset="100%" stop-color="#3b82f6" />
-                            </linearGradient>
-                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" stop-color="#34d399" stop-opacity="0.2" />
-                                <stop offset="100%" stop-color="#60a5fa" stop-opacity="0.2" />
-                            </linearGradient>
-                        </defs>
-                        <!-- Grid Tecnológico -->
-                        <circle cx="250" cy="250" r="180" stroke="url(#grad2)" stroke-width="2" stroke-dasharray="8 4" />
-                        <circle cx="250" cy="250" r="130" stroke="var(--border-color)" stroke-width="1" />
-                        <!-- Planta Central -->
-                        <path d="M250 400 V230" stroke="url(#grad1)" stroke-width="8" stroke-linecap="round" />
-                        <path d="M250 320 C200 300 180 250 180 220 C180 270 230 300 250 300" fill="url(#grad1)" opacity="0.8" />
-                        <path d="M250 280 C300 260 320 210 320 180 C320 230 270 260 250 260" fill="url(#grad1)" />
-                        <!-- Folhas Superiores -->
-                        <path d="M250 230 C220 200 220 150 250 120 C280 150 280 200 250 230 Z" fill="url(#grad1)" />
-                        <!-- Elementos de Dados -->
-                        <line x1="250" y1="400" x2="350" y2="400" stroke="var(--border-color)" stroke-width="2" />
-                        <circle cx="350" cy="400" r="6" fill="#3b82f6" />
-                        <text x="365" y="405" fill="var(--text-secondary)" font-size="12" font-weight="600">PH SOLO: 6.5</text>
+                <button class="carousel-arrow prev" id="carousel-prev">&lt;</button>
+                <button class="carousel-arrow next" id="carousel-next">&gt;</button>
+                <div class="carousel-dots" id="carousel-dots-container"></div>
+            </div>
 
-                        <line x1="250" y1="350" x2="150" y2="350" stroke="var(--border-color)" stroke-width="2" />
-                        <circle cx="150" cy="350" r="6" fill="#10b981" />
-                        <text x="70" y="355" fill="var(--text-secondary)" font-size="12" font-weight="600">H2O: OPTIMAL</text>
-                    </svg>
-                </div>
+            <div class="welcome-box">
+                <h2 data-i18n="welcomeTitle">Bem-vindo ao AgroFuturo</h2>
+                <p data-i18n="welcomeText">Plataforma dedicada a disseminar conhecimento técnico, prático e inovador para o desenvolvimento sustentável das nossas plantações.</p>
             </div>
         </section>
 
-        <!-- ==========================================================================
-           SEÇÃO SOBRE (TEORIA E CONCEITOS)
-           ========================================================================== -->
-        <section class="about id-target reveal" id="sobre">
-            <div class="container">
-                <div class="section-title-group">
-                    <span class="section-tag" data-translate="about-tag">Educação e Sustentabilidade</span>
-                    <h2 class="section-title" data-translate="about-title">O que é Agricultura Regenerativa?</h2>
-                    <p class="section-desc" data-translate="about-subtitle">Um modelo agrícola inovador focado em reabilitar e conservar os recursos naturais, trabalhando em harmonia com as leis da própria natureza.</p>
-                </div>
-
-                <div class="about-grid">
-                    <div class="about-image">
-                        <!-- Representação visual da rotação de solo e biodiversidade -->
-                        <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="background-color: var(--bg-primary); padding: 20px; border-radius: 16px; border: 1px solid var(--border-color);">
-                            <rect x="20" y="220" width="360" height="60" rx="8" fill="#78350f" opacity="0.2"/>
-                            <!-- Camadas de solo saudável -->
-                            <rect x="20" y="160" width="360" height="60" rx="8" fill="#10b981" opacity="0.1"/>
-                            <path d="M40 200 Q 100 180, 160 210 T 280 190 T 360 200" stroke="#059669" stroke-width="4" stroke-linecap="round"/>
-                            <circle cx="80" cy="200" r="15" fill="#34d399" opacity="0.4"/>
-                            <circle cx="200" cy="190" r="20" fill="#34d399" opacity="0.3"/>
-                            <circle cx="300" cy="210" r="12" fill="#34d399" opacity="0.5"/>
-                            <text x="30" y="260" fill="var(--text-secondary)" font-size="14" font-weight="700">Biodiversidade Microbiana Ativa</text>
-                            <!-- Ícone de Raízes profundas -->
-                            <path d="M120 160 Q 110 220, 130 250" stroke="#047857" stroke-width="3" fill="none"/>
-                            <path d="M130 180 Q 150 210, 140 240" stroke="#047857" stroke-width="2" fill="none"/>
-                            <path d="M280 160 Q 290 230, 270 260" stroke="#047857" stroke-width="3" fill="none"/>
-                        </svg>
-                    </div>
-
-                    <div class="about-content">
-                        <h3 data-translate="about-grid-title">Aumentar a colheita, curando o nosso planeta</h3>
-                        <p data-translate="about-grid-text">
-                            Diferente da agricultura convencional baseada apenas na exploração intensa, a agricultura regenerativa foca em reconstruir a matéria orgânica do solo, melhorar o ciclo da água e resgatar a biodiversidade. Isso resulta em safras mais resilientes a pragas e mudanças climáticas severas, sem abrir mão de alta produtividade.
-                        </p>
-
-                        <div class="features-list">
-                            <div class="feature-item">
-                                <div class="feature-icon-wrapper"><i data-lucide="shield"></i></div>
-                                <div class="feature-text">
-                                    <h4 data-translate="feat1-title">Saúde do Solo</h4>
-                                    <p data-translate="feat1-desc">Eliminação do revolvimento agressivo e conservação de microvida.</p>
-                                </div>
-                            </div>
-                            <div class="feature-item">
-                                <div class="feature-icon-wrapper"><i data-lucide="droplet"></i></div>
-                                <div class="feature-text">
-                                    <h4 data-translate="feat2-title">Retenção de Água</h4>
-                                    <p data-translate="feat2-desc">Solos ricos em matéria orgânica absorvem e filtram muito mais água.</p>
-                                </div>
-                            </div>
-                            <div class="feature-item">
-                                <div class="feature-icon-wrapper"><i data-lucide="leaf"></i></div>
-                                <div class="feature-text">
-                                    <h4 data-translate="feat3-title">Sequestro de Carbono</h4>
-                                    <p data-translate="feat3-desc">Transformação das lavouras em sumidouros naturais de gases poluentes.</p>
-                                </div>
-                            </div>
-                            <div class="feature-item">
-                                <div class="feature-icon-wrapper"><i data-lucide="line-chart"></i></div>
-                                <div class="feature-text">
-                                    <h4 data-translate="feat4-title">Rendimento Seguro</h4>
-                                    <p data-translate="feat4-desc">Redução de custos com fertilizantes artificiais e venenos químicos.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==========================================================================
-           OS PILARES DA PRÁTICA SUSTENTÁVEL
-           ========================================================================== -->
-        <section class="pillars id-target reveal" id="pilares">
-            <div class="container">
-                <div class="section-title-group">
-                    <span class="section-tag" data-translate="pillars-tag">Como Aplicar</span>
-                    <h2 class="section-title" data-translate="pillars-title">Pilares da Prática Regenerativa</h2>
-                    <p class="section-desc" data-translate="pillars-subtitle">Métodos práticos essenciais para alcançar o equilíbrio ideal entre alta produtividade no campo e proteção ambiental.</p>
-                </div>
-
-                <div class="pillars-grid">
-                    <!-- Pilar 1 -->
-                    <div class="pillar-card">
-                        <div class="pillar-icon"><i data-lucide="refresh-cw"></i></div>
-                        <h3 data-translate="p1-title">Rotação de Culturas</h3>
-                        <p data-translate="p1-desc">Alternar diferentes famílias de plantas na mesma área para evitar a exaustão de nutrientes específicos do solo e quebrar o ciclo natural de desenvolvimento de pragas.</p>
-                    </div>
-
-                    <!-- Pilar 2 -->
-                    <div class="pillar-card">
-                        <div class="pillar-icon"><i data-lucide="layers"></i></div>
-                        <h3 data-translate="p2-title">Cobertura Permanente</h3>
-                        <p data-translate="p2-desc">Manter o solo sempre coberto com plantas vivas ou palha de safras anteriores. Isso diminui a erosão, refresca a temperatura do solo e bloqueia plantas invasoras de forma limpa.</p>
-                    </div>
-
-                    <!-- Pilar 3 -->
-                    <div class="pillar-card">
-                        <div class="pillar-icon"><i data-lucide="combine"></i></div>
-                        <h3 data-translate="p3-title">Integração Lavoura-Pecuária</h3>
-                        <p data-translate="p3-desc">Consorciar animais e plantações para criar um ecossistema vivo. O gado fertiliza o solo naturalmente com esterco, gerando economia drástica de insumos sintéticos industriais.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==========================================================================
-           CALCULADORA / SIMULADOR DE IMPACTO AMBIENTAL (INTERATIVO COM JS)
-           ========================================================================== -->
-        <section class="calculator-section id-target reveal" id="calculadora">
-            <div class="container">
-                <div class="section-title-group">
-                    <span class="section-tag" data-translate="calc-tag">Simulador Educativo</span>
-                    <h2 class="section-title" data-translate="calc-title">Estime seu Impacto Verde</h2>
-                    <p class="section-desc" data-translate="calc-subtitle">Selecione o tamanho da propriedade agrícola e o tipo de manejo para calcular em tempo real os benefícios de sustentabilidade e lucratividade.</p>
-                </div>
-
-                <div class="calc-container">
-                    <div class="calc-form">
-                        <div class="calc-intro">
-                            <h3 data-translate="calc-form-title">Configurações da Fazenda</h3>
-                            <p data-translate="calc-form-desc">Defina as características para ver o impacto no ecossistema e economia do agricultor.</p>
-                        </div>
-
-                        <!-- Área em hectares -->
-                        <div class="form-group">
-                            <label for="farmArea" data-translate="label-area">Tamanho da Área (Hectares):</label>
-                            <input type="number" id="farmArea" class="text-input" value="100" min="1" max="10000" aria-label="Tamanho da Área">
-                        </div>
-
-                        <!-- Tipo de Manejo do Solo -->
-                        <div class="form-group">
-                            <label for="farmingType" data-translate="label-type">Tipo de Manejo Atual:</label>
-                            <select id="farmingType" class="select-input" aria-label="Tipo de Manejo">
-                                <option value="convencional" data-translate="opt-conv">Convencional (Sem cobertura, alto defensivo)</option>
-                                <option value="transicao" data-translate="opt-trans">Transição (Plantio direto inicial)</option>
-                                <option value="regenerativo" data-translate="opt-regen">Regenerativo Total (Rotação e Biológicos)</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="calc-results">
-                        <div class="results-header">
-                            <h4>
-                                <i data-lucide="gauge" style="width: 20px;"></i>
-                                <span data-translate="res-title">Resultado da Simulação</span>
-                            </h4>
-                        </div>
-
-                        <div class="metric-grid">
-                            <div class="metric-card">
-                                <div class="metric-label" data-translate="lbl-carbon">Carbono Retido</div>
-                                <div class="metric-value" id="carbonVal">-- t</div>
-                                <div class="metric-desc" data-translate="lbl-carbon-desc">Sequestrado por ano no solo.</div>
-                            </div>
-                            <div class="metric-card">
-                                <div class="metric-label" data-translate="lbl-economy">Economia em Insumos</div>
-                                <div class="metric-value" id="economyVal">R$ --</div>
-                                <div class="metric-desc" data-translate="lbl-economy-desc">Gastos evitados com fertilizantes.</div>
-                            </div>
-                        </div>
-
-                        <div class="feedback-box">
-                            <i data-lucide="info" style="width: 24px; color: var(--accent-green); flex-shrink: 0;"></i>
-                            <p id="calcFeedback" data-translate="calc-feedback-default">Preencha os dados ao lado para ver uma avaliação personalizada sobre a fazenda ecológica.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==========================================================================
-           CONTATO (FORMULÁRIO DE ENGANAMENTO SOCIAL)
-           ========================================================================== -->
-        <section class="contact id-target reveal" id="contato">
-            <div class="container grid contact-grid">
-                <div class="contact-info">
-                    <h2 class="contact-info-title" data-translate="contact-title">Junte-se à Transição Verde</h2>
-                    <p class="contact-info-desc" data-translate="contact-subtitle">Quer implementar técnicas sustentáveis em sua propriedade agrícola ou precisa de materiais educativos para escolas? Nossa equipe técnica está de prontidão.</p>
-                    
-                    <div class="contact-item">
-                        <div class="contact-item-icon"><i data-lucide="mail"></i></div>
-                        <div class="contact-item-text">
-                            <h4 data-translate="cont-mail">E-mail de Contato</h4>
-                            <p>suporte@agrinho2026.org</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-item-icon"><i data-lucide="map-pin"></i></div>
-                        <div class="contact-item-text">
-                            <h4 data-translate="cont-loc">Localização Principal</h4>
-                            <p>Paraná, Brasil</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Formulário com Inputs Semânticos de Contato -->
-                <div class="contact-form-wrapper">
-                    <form id="contactForm" autocomplete="on">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="userName" data-translate="lbl-name">Nome Completo</label>
-                                <input type="text" id="userName" class="text-input" required placeholder="Seu nome" autocomplete="name">
-                            </div>
-                            <div class="form-group">
-                                <label for="userEmail" data-translate="lbl-email">E-mail Corporativo</label>
-                                <input type="email" id="userEmail" class="text-input" required placeholder="seu@email.com" autocomplete="email">
-                            </div>
-                        </div>
-
-                        <div class="form-group-full">
-                            <div class="form-group">
-                                <label for="userMessage" data-translate="lbl-msg">Sua Mensagem / Dúvida</label>
-                                <textarea id="userMessage" class="text-input" required placeholder="Escreva como podemos te ajudar..." autocomplete="off"></textarea>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">
-                            <span data-translate="btn-send">Enviar Mensagem</span>
-                            <i data-lucide="send" style="width: 16px;"></i>
-                        </button>
-
-                        <!-- Mensagem de Alerta Controlada por JS -->
-                        <div id="formAlert" class="alert alert-success" role="alert">
-                            <i data-lucide="check-circle" style="width: 20px;"></i>
-                            <span id="alertMsg">Mensagem enviada com sucesso!</span>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- ==========================================================================
-       RODAPÉ (FOOTER)
-       ========================================================================== -->
-    <footer>
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <a href="#" class="footer-logo">
-                    <i data-lucide="sprout"></i> Agrinho2026
-                </a>
-                <p class="footer-desc" data-translate="foot-desc">
-                    Promovendo a conscientização ecológica e a alta eficiência no agronegócio para o Concurso Agrinho 2026.
-                </p>
+        <section id="sobre" class="spa-section">
+            <div class="motivational-banner">
+                <h2 data-i18n="aboutBannerTitle">Cultivar a Mente para Colher o Amanhã</h2>
+                <p data-i18n="aboutBannerDesc">A educação é a semente mais poderosa para a transformação do campo.</p>
             </div>
             
-            <div class="footer-links-group">
-                <h4 data-translate="foot-nav-title">Navegação</h4>
-                <div class="footer-links">
-                    <a href="#home" class="footer-link" data-translate="nav-home">Início</a>
-                    <a href="#sobre" class="footer-link" data-translate="nav-about">Sobre</a>
-                    <a href="#pilares" class="footer-link" data-translate="nav-pillars">Pilares</a>
-                    <a href="#calculadora" class="footer-link" data-translate="nav-calc">Simulador</a>
+            <div class="grid-cards layout-2-cols">
+                <div class="card card-danger">
+                    <img src="assets/imagens/perigo-compactcao.png" alt="Solo compactado e rachado com marcas de pneu">
+                    <h3 data-i18n="cardDangerTitle">O Perigo: Compactação do Solo</h3>
+                    <p data-i18n="cardDangerDesc"></p>
+                </div>
+                <div class="card card-success">
+                    <img src="assets/imagens/solucao-regeneracao.png" alt="Solo fértil e úmido com brotos verdes crescendo">
+                    <h3 data-i18n="cardSuccessTitle">A Solução: Regeneração e Fertilidade Ativa</h3>
+                    <p data-i18n="cardSuccessDesc"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnologia" class="spa-section">
+            <h2 class="section-title" data-i18n="techTitle">Inovação e Tecnologia Digital</h2>
+            <div class="grid-cards layout-3-cols">
+                <div class="card card-tech">
+                    <img src="assets/imagens/tech-monitoramento.png" alt="Drone monitorando lavoura com dados na screen">
+                    <div class="card-glow"></div>
+                    <h3 data-i18n="techCard1Title">Monitoramento Aéreo</h3>
+                    <p data-i18n="techCard1Desc">Imagens multiespectrais identificam pragas e anomalias térmicas antes que se espalhem.</p>
+                </div>
+                <div class="card card-tech featured">
+                    <img src="assets/imagens/tech-dados.png" alt="Agrônomo analisando gráficos de Big Data em tablet transparente">
+                    <div class="card-glow"></div>
+                    <span class="badge" data-i18n="techBadge">Recomendado</span>
+                    <h3 data-i18n="techCard2Title">Decisões com Dados</h3>
+                    <p data-i18n="techCard2Desc">Algoritmos de Big Data analisam o clima e o histórico da área para indicar o momento exato do plantio.</p>
+                </div>
+                <div class="card card-tech">
+                    <img src="assets/imagens/tech-aplicacoes.png" alt="Trator inteligente aplicando insumos agrícolas em taxa variável">
+                    <div class="card-glow"></div>
+                    <h3 data-i18n="techCard3Title">Aplicações Inteligentes</h3>
+                    <p data-i18n="techCard3Desc">Sistemas de taxa variável aplicam insumos apenas onde é necessário, eliminando desperdícios.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="praticas" class="spa-section">
+            <h2 class="section-title" data-i18n="praticasTitle">Práticas de Agricultura Regenerativa</h2>
+            <div class="grid-cards layout-2-cols">
+                <div class="card">
+                    <img src="assets/imagens/plantio-direto.png" alt="Brotos verdes emergindo através de palha seca em área de plantio direto">
+                    <h3 data-i18n="pratCard1Title">Plantio Direto na Palha</h3>
+                    <p data-i18n="pratCard1Desc">Sem revolver a terra, a matéria orgânica antiga protege o solo contra erosões e mantém a umidade ideal por muito mais tempo.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/imagens/rotacao-culturas.png" alt="Campo agrícola visto de cima mostrando faixas de rotação de culturas">
+                    <h3 data-i18n="pratCard2Title">Rotação de Culturas</h3>
+                    <p data-i18n="pratCard2Desc">Alternar espécies diferentes na mesma safra quebra o ciclo biológico de pragas e enriquece os nutrientes do solo naturalmente.</p>
                 </div>
             </div>
 
-            <div class="footer-links-group">
-                <h4 data-translate="foot-cred-title">Créditos de Mídia</h4>
-                <div class="footer-links">
-                    <span class="footer-link" style="cursor: default;">SVGs Autorais (Canva / Vectr)</span>
-                    <span class="footer-link" style="cursor: default;">Ícones por Lucide Icons</span>
-                    <span class="footer-link" style="cursor: default;">Tipografia por Google Fonts</span>
+            <div class="infographic-container">
+                <h3 data-i18n="infoTitle">Indicadores de Eficiência Ecológica</h3>
+                <div class="charts-wrapper">
+                    <div class="chart-item">
+                        <div class="circular-chart" style="--percent: 80; --gradient-color: #2ecc71;">
+                            <span class="chart-value">80%</span>
+                        </div>
+                        <p class="chart-label" data-i18n="metric1">Economia de Água</p>
+                    </div>
+                    <div class="chart-item">
+                        <div class="circular-chart" style="--percent: 65; --gradient-color: #27ae60;">
+                            <span class="chart-value">65%</span>
+                        </div>
+                        <p class="chart-label" data-i18n="metric2">Redução de Carbono</p>
+                    </div>
+                    <div class="chart-item">
+                        <div class="circular-chart" style="--percent: 90; --gradient-color: #1abc9c;">
+                            <span class="chart-value">90%</span>
+                        </div>
+                        <p class="chart-label" data-i18n="metric3">Mais Saúde do Solo</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="container footer-bottom">
-            <p>&copy; 2026 Concurso Agrinho. <span data-translate="foot-rights">Todos os direitos reservados aos autores do projeto.</span></p>
-            <span class="agrinho-badge" data-translate="foot-badge">Agro Forte, Futuro Sustentável</span>
-        </div>
-    </footer>
+        <section id="precisao" class="spa-section">
+            <div class="intro-precisao">
+                <h2 data-i18n="precisaoTitle">Drones Agrícolas de Alta Precisão</h2>
+                <p data-i18n="precisaoDesc">A evolução robótica aérea garante a máxima proteção da lavoura com impacto ambiental mínimo e precisão cirúrgica de gota.</p>
+            </div>
 
-    <!-- Script externo (Conforme critério da banca) -->
-    <script src="script.js" defer></script>
+            <div class="grid-cards layout-4-cols">
+                <div class="card layout-mini">
+                    <img src="assets/imagens/precisao-hidrica.png" alt="Pulverização cirúrgica de gotas d'água">
+                    <h4 data-i18n="vantage1Title">Economia Hídrica</h4>
+                    <p data-i18n="vantage1Desc">Redução drástica no volume de água por hectare.</p>
+                </div>
+                <div class="card layout-mini">
+                    <img src="assets/imagens/precisao-sem-amassamento.png" alt="Plantação intacta sem marcas de pneus">
+                    <h4 data-i18n="vantage2Title">Sem Amassamento</h4>
+                    <p data-i18n="vantage2Desc">Zero perdas por esmagamento de plantas na esteira.</p>
+                </div>
+                <div class="card layout-mini">
+                    <img src="assets/imagens/precisao-acesso-total.png" alt="Drone voando sobre terrain íngreme">
+                    <h4 data-i18n="vantage3Title">Acesso Total</h4>
+                    <p data-i18n="vantage3Desc">Alcança áreas íngremes ou solos encharcados facilmente.</p>
+                </div>
+                <div class="card layout-mini">
+                    <img src="assets/imagens/precisao-continua.png" alt="Drone agrícola operando durante a noite">
+                    <h4 data-i18n="vantage4Title">Operação Contínua</h4>
+                    <p data-i18n="vantage4Desc">Planos automatizados dia e noite com precisão centimétrica.</p>
+                </div>
+            </div>
+
+            <div class="infographic-container">
+                <h3 data-i18n="infoTitle">Indicadores de Eficiência Ecológica</h3>
+                <div class="charts-wrapper">
+                    <div class="chart-item">
+                        <div class="circular-chart" style="--percent: 95; --gradient-color: #2ecc71;">
+                            <span class="chart-value">95%</span>
+                        </div>
+                        <p class="chart-label" data-i18n="chart1Label">Precisão de Pulverização</p>
+                    </div>
+                    <div class="chart-item">
+                        <div class="circular-chart" style="--percent: 100; --gradient-color: #27ae60;">
+                            <span class="chart-value">100%</span>
+                        </div>
+                        <p class="chart-label" data-i18n="chart2Label">Segurança Operacional</p>
+                    </div>
+                    <div class="chart-item">
+                        <div class="circular-chart" style="--percent: 85; --gradient-color: #1abc9c;">
+                            <span class="chart-value">85%</span>
+                        </div>
+                        <p class="chart-label" data-i18n="chart3Label">Redução de Desperdício</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="spa-section">
+            <h2 class="section-title" data-i18n="contactTitle">Fale Conosco</h2>
+            <div class="form-wrapper">
+                <form id="contact-form" class="styled-form">
+                    <div class="form-group">
+                        <label for="name" data-i18n="formNameLabel">Nome completo</label>
+                        <input type="text" id="name" required data-i18n-holder="formNameHolder" placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="formEmailLabel">E-mail corporativo/pessoal</label>
+                        <input type="email" id="email" required data-i18n-holder="formEmailHolder" placeholder="nome@exemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="formMsgLabel">Sua mensagem ou proposta</label>
+                        <textarea id="message" rows="5" required data-i18n-holder="formMsgHolder" placeholder="Como podemos ajudar no seu projeto rural?"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" data-i18n="formSubmitBtn">Enviar Mensagem</button>
+                </form>
+                <div id="form-feedback" class="feedback-box msg-hidden"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
