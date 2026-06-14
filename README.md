@@ -31,14 +31,14 @@ O projeto foi desenvolvido utilizando tecnologias web nativas, sem a necessidade
 * **JavaScript (ES6+):** Lógica de manipulação da DOM, gerenciamento de estado SPA, motor de tradução i18n e persistência de dados.
 
 ##Imagens: Uso da IA google gemini
-Veneno
-1. 
-Prompt: A high-tech agricultural quadcopter drone flying low over a lush green soy plantation field, spraying a very fine, precise mist of water droplets from beneath its arms. Sunny day, cinematic lighting, sharp focus on the drone and the spray nozzles, professional agriculture photography, 8k resolution, aspect ratio 16:9. 
 
-Semeando
+drone-pulverizacao.jpg
+1. drone-pulverizacao.jpPrompt: A high-tech agricultural quadcopter drone flying low over a lush green soy plantation field, spraying a very fine, precise mist of water droplets from beneath its arms. Sunny day, cinematic lighting, sharp focus on the drone and the spray nozzles, professional agriculture photography, 8k resolution, aspect ratio 16:9. 
+
+drone-semeadura.jpg
 2. Prompt: An aerial drone shot of a vast, healthy soybean plantation field. Beautiful patterns of perfectly aligned green crops, completely pristine and intact with no tractor tire tracks or damage. Bright afternoon sun, vivid natural colors, high scale sustainable farming, 8k, aspect ratio 16:9.
 
-Noturna
+drone-mapeamento.jpg
 3.An agricultural drone operating at twilight, dusk sky with deep blue and orange hues. The drone has subtle glowing navigation lights and is mapping the crop field below with a visible soft laser or multi-spectral sensor beam scanning the plants. Futuristic yet realistic smart farming, high contrast, crisp details, 8k, aspect ratio 16:9. 
 
 Agro Forte, Futuro Sustentável com o nome da imagem: carousel-1.jpg
