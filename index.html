@@ -3,240 +3,327 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte, Futuro Sustentável</title>
+    <title>AgroFuturo - Educar para Proteger o Solo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
+    <header class="navbar">
         <div class="nav-container">
-            <a href="#inicio" class="logo" id="logoHome">
-                Agro<span class="accent">Sustentável</span>
+            <a href="#" class="logo" id="logoHome">
+                <span class="logo-text">Agro<span class="accent">Futuro</span></span>
             </a>
-            <div class="nav-controls">
-                <select id="langSelect">
-                    <option value="pt">PT</option>
-                    <option value="en">EN</option>
-                    <option value="es">ES</option>
-                </select>
-                <button class="theme-btn" id="themeToggle" aria-label="Alternar Tema">
-                    <span class="icon-sun">☀️</span>
-                    <span class="icon-moon">🌙</span>
-                </button>
-            </div>
-        </div>
-        <div class="nav-menu-bar">
-            <div class="nav-menu">
+            
+            <nav class="nav-menu" id="navMenu">
                 <a href="#inicio" data-i18n="nav-inicio">Início</a>
                 <a href="#sobre" data-i18n="nav-sobre">Sobre Nós</a>
                 <a href="#tecnologia" data-i18n="nav-tec">Tecnologia</a>
                 <a href="#praticas" data-i18n="nav-praticas">Práticas Regenerativas</a>
                 <a href="#precisao" data-i18n="nav-precisao">Agricultura de Precisão</a>
                 <a href="#contato" data-i18n="nav-contato">Contato</a>
+            </nav>
+
+            <div class="nav-controls">
+                <div class="lang-selector">
+                    <select id="langSelect" aria-label="Selecionar Idioma">
+                        <option value="pt">🇧🇷 PT</option>
+                        <option value="en">🇺🇸 EN</option>
+                        <option value="es">🇪🇸 ES</option>
+                    </select>
+                </div>
+
+                <button id="themeToggle" class="theme-btn" aria-label="Alternar tema">
+                    <span class="icon-sun">☀️</span>
+                    <span class="icon-moon">🌙</span>
+                </button>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <section id="inicio" class="spa-section active">
-        <div class="carousel-container">
-            <div class="carousel-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80');">
-                <div class="carousel-caption">
-                    <h1 data-i18n="slide1-title">Agro Forte, Futuro Sustentável</h1>
-                    <p data-i18n="slide1-desc">O equilíbrio perfeito entre a tecnologia que avança e a terra que nos alimenta.</p>
+    <main>
+        <section id="inicio" class="spa-section active">
+            <div class="carousel-container">
+                <div class="carousel-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url('assets/imagens/carousel-1.jpg');">
+                    <div class="carousel-caption">
+                        <h1 data-i18n="slide1-title">Agro Forte, Futuro Sustentável</h1>
+                        <p data-i18n="slide1-desc">O equilíbrio perfeito entre a tecnologia que avança e a terra que nos alimenta.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=1200&q=80');">
-                <div class="carousel-caption">
-                    <h1 data-i18n="slide2-title">A Voz do Chão que Pisamos</h1>
-                    <p data-i18n="slide2-desc">Educar as novas gerações é semear a consciência de que o solo é um organismo vivo.</p>
+                <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url('assets/imagens/carousel-2.jpg');">
+                    <div class="carousel-caption">
+                        <h1 data-i18n="slide2-title">A Voz do Chão que Pisamos</h1>
+                        <p data-i18n="slide2-desc">Educar as novas gerações é semear a consciência de que o solo é um organismo vivo.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=1200&q=80');">
-                <div class="carousel-caption">
-                    <h1 data-i18n="slide3-title">Inteligência a Serviço da Natureza</h1>
-                    <p data-i18n="slide3-desc">Drones e dados trabalhando juntos para aplicar insumos com precisão cirúrgica.</p>
+                <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url('assets/imagens/carousel-3.jpg');">
+                    <div class="carousel-caption">
+                        <h1 data-i18n="slide3-title">Inteligência a Serviço da Natureza</h1>
+                        <p data-i18n="slide3-desc">Drones e dados trabalhando juntos para aplicar insumos com precisão cirúrgica.</p>
+                    </div>
                 </div>
-            </div>
-            <button class="carousel-arrow prev" id="prevBtn">❮</button>
-            <button class="carousel-arrow next" id="nextBtn">❯</button>
-            <div class="carousel-dots" id="carouselDots"></div>
-        </div>
+                <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url('assets/imagens/carousel-4.jpg');">
+                    <div class="carousel-caption">
+                        <h1 data-i18n="slide4-title">Cuidar, Proteger e Curar o Solo</h1>
+                        <p data-i18n="slide4-desc">O Plantio Direto e a rotação devolvem a vida e os nutrientes que a terra precisa.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url('assets/imagens/carousel-5.jpg');">
+                    <div class="carousel-caption">
+                        <h1 data-i18n="slide5-title">Produtividade de Alta Performance</h1>
+                        <p data-i18n="slide5-desc">Preservar o meio ambiente não reduz colheitas; garante a alimentação do amanhã.</p>
+                    </div>
+                </div>
 
-        <div class="container section-padding">
-            <div class="section-header">
-                <h2 data-i18n="boasvindas-title">Bem-vindo à Jornada do Agro Sustentável</h2>
-                <p data-i18n="boasvindas-desc">Explore nossa plataforma e entenda como a união entre os saberes da terra e as tecnologias do amanhã moldarão o destino do nosso planeta.</p>
-            </div>
-        </div>
-    </section>
+                <button class="carousel-arrow prev" id="prevBtn" aria-label="Imagem Anterior">&#10094;</button>
+                <button class="carousel-arrow next" id="nextBtn" aria-label="Próxima Imagem">&#10095;</button>
 
-    <section id="sobre" class="spa-section section-padding">
-        <div class="container">
-            <div class="section-header">
-                <h2 data-i18n="sobre-title">O Propósito Educacional: Por que existimos?</h2>
-                <p data-i18n="sobre-subtitle">O solo não é apenas terra sob nossos pés. Ele é o coração pulsante da vida no planeta.</p>
-            </div>
-            <div class="precisao-intro text-justify-custom">
-                <p data-i18n="sobre-motivacional">Diariamente, ações impensadas e o manejo incorreto degradam toneladas de solos férteis através da erosão e da compactação mecânica...</p>
-            </div>
-            <div class="precisao-grid">
-                <div class="precisao-card border-danger">
-                    <img class="precisao-img" src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=600&q=80" alt="Solo Compactado">
-                    <div class="precisao-body">
-                        <h3 data-i18n="impacto-title">O Alerta: O Peso que Sufoca</h3>
-                        <p class="text-justify-custom" data-i18n="impacto-desc">O tráfego de tratores pesados esmaga as estruturas do solo, expulsando o ar e impedindo a água de penetrar.</p>
-                    </div>
-                </div>
-                <div class="precisao-card border-success">
-                    <img class="precisao-img" src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=600&q=80" alt="Solo Saudável">
-                    <div class="precisao-body">
-                        <h3 data-i18n="solucao-title">A Esperança: A Cura pela Natureza</h3>
-                        <p class="text-justify-custom" data-i18n="solucao-desc">Quando adotamos técnicas ecológicas, damos à terra a chance de respirar novamente.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="tecnologia" class="spa-section section-padding">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag" data-i18n="tec-tag">Inovação Digital</span>
-                <h2 data-i18n="tec-title">Alta Tecnologia a Favor do Campo</h2>
-                <p data-i18n="tec-subtitle">Drones, inteligência de dados e conectividade moldando tomadas de decisões rápidas.</p>
-            </div>
-            <div class="tech-grid-modern">
-                <div class="tech-card-modernfeatured">
-                    <div class="tech-card-overlay"></div>
-                    <div class="tech-icon-container">
-                        <div class="tech-icon-badge">🛸</div>
-                        <span class="badge-blue" data-i18n="badge-blue">Recomendado</span>
-                    </div>
-                    <div class="tech-card-content">
-                        <h3 data-i18n="tech1-title">Monitoramento Aéreo</h3>
-                        <p class="text-justify-custom" data-i18n="tech1-desc">Drones de última geração capturam imagens multiespectrais de alta resolução...</p>
-                    </div>
-                </div>
-                <div class="tech-card-modern">
-                    <div class="tech-card-overlay"></div>
-                    <div class="tech-icon-container">
-                        <div class="tech-icon-badge">📊</div>
-                    </div>
-                    <div class="tech-card-content">
-                        <h3 data-i18n="tech2-title">Decisões com Dados</h3>
-                        <p class="text-justify-custom" data-i18n="tech2-desc">Algoritmos inteligentes processam dados em tempo real...</p>
-                    </div>
-                </div>
-                <div class="tech-card-modern">
-                    <div class="tech-card-overlay"></div>
-                    <div class="tech-icon-container">
-                        <div class="tech-icon-badge">🎯</div>
-                    </div>
-                    <div class="tech-card-content">
-                        <h3 data-i18n="tech3-title">Aplicações Inteligentes</h3>
-                        <p class="text-justify-custom" data-i18n="tech3-desc">Sistemas de telemetria guiam pulverizações cirúrgicas...</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="praticas" class="spa-section section-padding">
-        <div class="container">
-            <div class="section-header">
-                <h2 data-i18n="prat-title">Práticas de Agricultura Regenerativa</h2>
-                <p data-i18n="prat-subtitle">Pequenas ações coordenadas que geram grandes transformações na saúde da lavoura.</p>
-            </div>
-            
-            <div class="precisao-grid">
-                <div class="precisao-card border-success">
-                    <div class="precisao-body">
-                        <h3 data-i18n="p1-title">Plantio Direto</h3>
-                        <p class="text-justify-custom" data-i18n="p1-desc">Considerado a maior revolução conservacionista da agricultura tropical...</p>
-                    </div>
-                </div>
-                <div class="precisao-card border-success">
-                    <div class="precisao-body">
-                        <h3 data-i18n="p2-title">Rotação de Culturas</h3>
-                        <p class="text-justify-custom" data-i18n="p2-desc">Diferente da sucessão simples, a Rotação de Culturas consiste na alternância planejada...</p>
-                    </div>
-                </div>
+                <div class="carousel-dots" id="carouselDots"></div>
             </div>
 
-            <div class="sustainability-infographic">
-                <h3 data-i18n="regen-metrics-title">Impacto Mensurável na Regeneração do Ecossistema</h3>
-                <div class="info-charts-flex">
-                    <div class="chart-box">
-                        <div class="circle-progress water-reduction"><span class="circle-value">95%</span></div>
-                        <span class="chart-label" data-i18n="m1">Economia de Água</span>
-                    </div>
-                    <div class="chart-box">
-                        <div class="circle-progress zero-damage"><span class="circle-value">100%</span></div>
-                        <span class="chart-label" data-i18n="m2">Redução de Carbono</span>
-                    </div>
-                    <div class="chart-box">
-                        <div class="circle-progress carbon-cut"><span class="circle-value">85%</span></div>
-                        <span class="chart-label" data-i18n="m3">Mais Saúde do Solo</span>
-                    </div>
+            <div class="container section-padding">
+                <div class="section-header">
+                    <h2 data-i18n="boasvindas-title">Bem-vindo à Jornada do Agro Sustentável</h2>
+                    <p class="text-justify-custom" data-i18n="boasvindas-desc">Explore nossa plataforma e entenda como a união entre os saberes da terra e as tecnologias do amanhã moldarão o destino do nosso planeta.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="precisao" class="spa-section section-padding">
-        <div class="container">
-            <div class="section-header">
-                <h2 data-i18n="precisao-title">Inovações na Agricultura de Precisão</h2>
-                <p data-i18n="precisao-subtitle">Tecnologia de ponta moldando uma nova era de eficiência e preservação.</p>
-            </div>
-            <div class="precisao-intro">
-                <p data-i18n="precisao-p-main">Os drones revolucionaram o setor agrícola brasileiro, substituindo tarefas pesadas...</p>
-            </div>
-            <div class="precisao-grid">
-                <div class="precisao-card">
-                    <div class="precisao-body">
-                        <h3 data-i18n="drone-v1-title">Economia Hídrica</h3>
-                        <p data-i18n="drone-v1-desc">Podem reduzir o uso de água em até 95% em comparação com pulverizadores terrestres.</p>
-                    </div>
+        <section id="sobre" class="spa-section">
+            <div class="container section-padding">
+                <div class="section-header">
+                    <h2 data-i18n="sobre-title">O Propósito Educacional: Por que existimos?</h2>
+                    <p data-i18n="sobre-subtitle">O solo não é apenas terra sob nossos pés. Ele é o coração pulsante da vida no planeta.</p>
                 </div>
-                <div class="precisao-card">
-                    <div class="precisao-body">
-                        <h3 data-i18n="drone-v2-title">Sem Amassamento</h3>
-                        <p data-i18n="drone-v2-desc">Como flutuam sobre a plantação, evitam o pisoteio de pneus.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="contato" class="spa-section section-padding">
-        <div class="container">
-            <div class="section-header">
-                <h2 data-i18n="contato-title">Contato</h2>
-                <p data-i18n="contato-subtitle">Entre em contato conosco</p>
+                <div class="precisao-intro">
+                    <p class="text-justify-custom" data-i18n="sobre-motivacional">Diariamente, ações impensadas e o manejo incorreto degradam toneladas de solos férteis através da erosão e da compactação mecânica. Este espaço nasceu como um manifesto educacional para o Concurso Agrinho. Nosso objetivo vai muito além de informar: queremos <strong>tocar corações e despertar mentes</strong> para a urgente missão de restaurar a saúde do nosso chão. Amar a terra é proteger nossa própria existência!</p>
+                </div>
+
+                <div class="precisao-grid">
+                    <div class="precisao-card border-danger">
+                        <img src="assets/imagens/trator-impacto.jpg" alt="Trator compactando o solo" class="precisao-img">
+                        <div class="precisao-body">
+                            <h3 data-i18n="impacto-title">O Alerta: O Peso que Sufoca</h3>
+                            <p class="text-justify-custom" data-i18n="impacto-desc">O tráfego de tratores pesados esmaga as estruturas do solo, expulsando o ar e impedindo a água de penetrar. Raízes fracas geram plantas frágeis. Reconhecer o erro é o primeiro passo para a mudança.</p>
+                        </div>
+                    </div>
+
+                    <div class="precisao-card border-success">
+                        <img src="assets/imagens/solo-regenerado.jpg" alt="Solo saudável e regenerado" class="precisao-img">
+                        <div class="precisao-body">
+                            <h3 data-i18n="solucao-title">A Esperança: A Cura pela Natureza</h3>
+                            <p class="text-justify-custom" data-i18n="solucao-desc">Quando adotamos técnicas ecológicas, damos à terra a chance de respirar novamente. Um solo rico em biodiversidade armazena água, mitiga secas, captura carbono e floresce em fartura.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <form id="contactForm" class="contact-form">
-                <div class="form-group">
-                    <label for="userName" data-i18n="label-nome">Nome</label>
-                    <input type="text" id="userName" data-i18n-holder="placeholder-nome" required>
+        </section>
+
+        <section id="tecnologia" class="spa-section">
+            <div class="container section-padding">
+                <div class="section-header">
+                    <span class="section-tag" data-i18n="tec-tag">Inovação Digital</span>
+                    <h2 data-i18n="tec-title">Alta Tecnologia a Favor do Campo</h2>
+                    <p data-i18n="tec-subtitle">Drones, inteligência de dados e conectividade moldando tomadas de decisões rápidas, inteligentes e sustentáveis.</p>
                 </div>
-                <div class="form-group">
-                    <label for="userEmail" data-i18n="label-email">E-mail</label>
-                    <input type="email" id="userEmail" data-i18n-holder="placeholder-email" required>
+
+                <div class="tech-grid-modern">
+                    <div class="tech-card-modern">
+                        <div class="tech-card-overlay"></div>
+                        <div class="tech-card-content">
+                            <div class="tech-icon-container">
+                                <div class="tech-icon-badge">🛸</div>
+                            </div>
+                            <h3 data-i18n="tech1-title">Monitoramento Aéreo</h3>
+                            <p class="text-justify-custom" data-i18n="tech1-desc">Drones de última geração capturam imagens multiespectrais de alta resolução, identificando focos de pragas e estresse hídrico antes que se espalhem.</p>
+                            <span class="tech-card-link">✦</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-card-modernfeatured">
+                        <div class="tech-card-overlay"></div>
+                        <div class="tech-card-content">
+                            <div class="tech-icon-container">
+                                <div class="tech-icon-badge">📊</div>
+                                <span class="badge-blue" data-i18n="badge-recomendado">Recomendado</span>
+                            </div>
+                            <h3 data-i18n="tech2-title">Decisões com Dados</h3>
+                            <p class="text-justify-custom" data-i18n="tech2-desc">Algoritmos inteligentes processam dados em tempo real. O produtor visualiza mapas de calor e relatórios preditivos na palma da mão para agir no momento exato.</p>
+                            <span class="tech-card-link">✦</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-card-modern">
+                        <div class="tech-card-overlay"></div>
+                        <div class="tech-card-content">
+                            <div class="tech-icon-container">
+                                <div class="tech-icon-badge">💧</div>
+                            </div>
+                            <h3 data-i18n="tech3-title">Aplicações Inteligentes</h3>
+                            <p class="text-justify-custom" data-i18n="tech3-desc">Sistemas de telemetria guiam pulverizações cirúrgicas. O insumo é aplicado apenas onde é necessário, blindando o ecossistema e reduzindo desperdícios.</p>
+                            <span class="tech-card-link">✦</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="userMsg" data-i18n="label-msg">Mensagem</label>
-                    <textarea id="userMsg" rows="5" data-i18n-holder="placeholder-msg" required></textarea>
+            </div>
+        </section>
+
+        <section id="praticas" class="spa-section">
+            <div class="container section-padding">
+                <div class="section-header">
+                    <h2 data-i18n="prat-title">Práticas de Agricultura Regenerativa</h2>
+                    <p data-i18n="prat-subtitle">Pequenas ações coordenadas que geram grandes transformações na saúde da lavoura.</p>
                 </div>
-                <button type="submit" class="btn-submit" data-i18n="btn-enviar">Enviar</button>
+
+                <div class="precisao-grid">
+                    <div class="precisao-card">
+                        <img src="assets/imagens/plantio-direto.jpg" alt="Plantio Direto" class="precisao-img">
+                        <div class="precisao-body">
+                            <h3><span class="icon-inline">🌱</span> <span data-i18n="p1-title">Plantio Direto</span></h3>
+                            <p class="text-justify-custom" data-i18n="p1-desc">Carregando conteúdo especializado...</p>
+                        </div>
+                    </div>
+
+                    <div class="precisao-card">
+                        <img src="assets/imagens/rotacao-culturas.jpg" alt="Rotação de culturas" class="precisao-img">
+                        <div class="precisao-body">
+                            <h3><span class="icon-inline">🔄</span> <span data-i18n="p2-title">Rotação de Culturas</span></h3>
+                            <p class="text-justify-custom" data-i18n="p2-desc">Carregando conteúdo especializado...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sustainability-infographic">
+                    <h3 data-i18n="regen-metrics-title">Impacto Mensurável na Regeneração do Ecossistema</h3>
+                    
+                    <div class="info-charts-flex">
+                        <div class="chart-box">
+                            <div class="circle-progress water-economy-regen">
+                                <span class="circle-value">80%</span>
+                            </div>
+                            <p class="chart-label" data-i18n="m1">Economia de Água</p>
+                        </div>
+                        
+                        <div class="chart-box">
+                            <div class="circle-progress carbon-reduction-regen">
+                                <span class="circle-value">65%</span>
+                            </div>
+                            <p class="chart-label" data-i18n="m2">Redução de Carbono</p>
+                        </div>
+                        
+                        <div class="chart-box">
+                            <div class="circle-progress soil-health-regen">
+                                <span class="circle-value">90%</span>
+                            </div>
+                            <p class="chart-label" data-i18n="m3">Mais Saúde do Solo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="precisao" class="spa-section">
+            <div class="container section-padding">
+                <div class="section-header">
+                    <h2 data-i18n="precisao-title">Inovações na Agricultura de Precisão</h2>
+                    <p data-i18n="precisao-subtitle">Tecnologia de ponta moldando uma nova era de eficiência e preservação no agronegócio.</p>
+                </div>
+
+                <div class="precisao-intro">
+                    <p class="text-justify-custom" data-i18n="precisao-p-main">Os drones revolucionaram o setor agrícola brasileiro, substituindo gradativamente tarefas pesadas e reduzindo impactos ambientais drásticos. Suas principais vantagens incluem: [1, 2]</p>
+                </div>
+
+                <div class="precisao-grid">
+                    <div class="precisao-card">
+                        <img src="assets/imagens/drone-pulverizacao.jpg" alt="Drone realizando pulverização de precisão" class="precisao-img">
+                        <div class="precisao-body">
+                            <h3><span class="icon-inline">💧</span> <span data-i18n="drone-v1-title">Economia Hídrica</span></h3>
+                            <p class="text-justify-custom" data-i18n="drone-v1-desc">Podem reduzir o uso de água em até 95% em comparação com os pulverizadores terrestres convencionais.</p>
+                        </div>
+                    </div>
+
+                    <div class="precisao-card">
+                        <img src="assets/imagens/lavoura-intacta.jpg" alt="Lavoura sem amassamento mecânico" class="precisao-img">
+                        <div class="precisao-body">
+                            <h3><span class="icon-inline">🌱</span> <span data-i18n="drone-v2-title">Sem Amassamento</span></h3>
+                            <p class="text-justify-custom" data-i18n="drone-v2-desc">Como flutuam sobre a plantação, evitam completamente a perda física de plantas por pisoteio de pneus.</p>
+                        </div>
+                    </div>
+
+                    <div class="precisao-card">
+                        <img src="assets/imagens/drone-semeadura.jpg" alt="Drone realizando semeadura" class="precisao-img">
+                        <div class="precisao-body">
+                            <h3><span class="icon-inline">⛰️</span> <span data-i18n="drone-v3-title">Acesso Total</span></h3>
+                            <p class="text-justify-custom" data-i18n="drone-v3-desc">Operam perfeitamente em áreas montanhosas, encostas inclinadas e locais inacessíveis para tratores.</p>
+                        </div>
+                    </div>
+
+                    <div class="precisao-card">
+                        <img src="assets/imagens/drone-mapeamento.jpg" alt="Drone operando mapeamento térmico" class="precisao-img">
+                        <div class="precisao-body">
+                            <h3><span class="icon-inline">🌙</span> <span data-i18n="drone-v4-title">Operação Contínua</span></h3>
+                            <p class="text-justify-custom" data-i18n="drone-v4-desc">Trabalham eficientemente em terrenos totalmente encharcados ou durante o período noturno.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sustainability-infographic">
+                    <h3 data-i18n="info-title">Contribuição Ecológica e Sustentabilidade</h3>
+                    <div class="info-charts-flex">
+                        <div class="chart-box">
+                            <div class="circle-progress water-reduction">
+                                <span class="circle-value">95%</span>
+                            </div>
+                            <p class="chart-label" data-i18n="info-water">Redução do Consumo de Água Potável</p>
+                        </div>
+                        <div class="chart-box">
+                            <div class="circle-progress zero-damage">
+                                <span class="circle-value">100%</span>
+                            </div>
+                            <p class="chart-label" data-i18n="info-damage">Preservação contra Amassamento do Solo</p>
+                        </div>
+                        <div class="chart-box">
+                            <div class="circle-progress carbon-cut">
+                                <span class="circle-value">85%</span>
+                            </div>
+                            <p class="chart-label" data-i18n="info-carbon">Redução na Emissão de Carbono (Combustível)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="spa-section">
+            <div class="container section-padding">
+                <div class="section-header">
+                    <h2 data-i18n="contato-title">Contato</h2>
+                    <p data-i18n="contato-subtitle">Entre em contato conosco</p>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="userName" data-i18n="label-nome">Nome</label>
+                        <input type="text" id="userName" required data-i18n-holder="placeholder-nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="userEmail" data-i18n="label-email">E-mail</label>
+                        <input type="email" id="userEmail" required data-i18n-holder="placeholder-email">
+                    </div>
+                    <div class="form-group">
+                        <label for="userMessage" data-i18n="label-msg">Mensagem</label>
+                        <textarea id="userMessage" rows="5" required data-i18n-holder="placeholder-msg"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit" data-i18n="btn-enviar">Enviar</button>
+                </form>
+
                 <div id="formFeedback" class="form-feedback hidden"></div>
-            </form>
-        </div>
-    </section>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 AgroSustentável. <span data-i18n="footer-rights">Todos os direitos reservados.</span></p>
+            <p>&copy; 2026 AgroFuturo. <span data-i18n="footer-rights">Todos os direitos reservados.</span></p>
         </div>
     </footer>
 
