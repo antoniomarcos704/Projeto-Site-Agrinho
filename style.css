@@ -65,6 +65,7 @@ body {
     padding: 60px 0;
 }
 
+/* ALINHAMENTO DE TEXTO REVISADO (PROFISSIONAL) */
 .text-justify-custom {
     text-align: justify;
     text-justify: inter-word;
@@ -122,11 +123,6 @@ body {
 
 .logo .accent {
     color: var(--primary-light);
-}
-
-.nav-menu {
-    display: flex;
-    align-items: center;
 }
 
 .nav-menu a {
@@ -604,6 +600,14 @@ body.dark-theme .water-reduction { background: conic-gradient(#81C784 95%, #222B
 body.dark-theme .zero-damage { background: conic-gradient(#00E676 100%, #222B26 0); }
 body.dark-theme .carbon-cut { background: conic-gradient(#B9F6CA 85%, #222B26 0); }
 
+.water-economy-regen { background: conic-gradient(#2E6A4F 80%, #EAECEE 0); }
+.carbon-reduction-regen { background: conic-gradient(#3B8C66 65%, #EAECEE 0); }
+.soil-health-regen { background: conic-gradient(#4CAF7D 90%, #EAECEE 0); }
+
+body.dark-theme .water-economy-regen { background: conic-gradient(#81C784 80%, #222B26 0); }
+body.dark-theme .carbon-reduction-regen { background: conic-gradient(#B9F6CA 65%, #222B26 0); }
+body.dark-theme .soil-health-regen { background: conic-gradient(#00E676 90%, #222B26 0); }
+
 .circle-progress::before {
     content: '';
     position: absolute;
@@ -709,39 +713,16 @@ body.dark-theme .circle-value {
 }
 
 /* ==========================================================================
-   MEDIA QUERIES (Responsividade Total Revisada)
+   MEDIA QUERIES (Responsividade)
    ========================================================================== */
 @media (max-width: 1024px) {
     .nav-menu a { margin-right: 12px; font-size: 0.95rem; }
 }
 
 @media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        height: auto;
-        padding: 15px 0;
-        gap: 12px;
-    }
-    .spa-section {
-        margin-top: 140px; /* Ajuste para não cobrir o conteúdo devido à quebra de linhas do menu */
-    }
     .carousel-caption h1 { font-size: 2rem; }
     .carousel-caption p { font-size: 1.1rem; }
     .precisao-grid { grid-template-columns: 1fr; }
-    
-    /* MODIFICAÇÃO CHAVE: Permite que os links desçam de linha e fiquem totalmente visíveis */
-    .nav-menu { 
-        display: flex; 
-        flex-wrap: wrap; 
-        justify-content: center;
-        gap: 8px 12px; 
-        width: 100%;
-        max-width: 100%;
-        padding: 5px 0; 
-    }
-    .nav-menu a { 
-        margin-right: 0; 
-        font-size: 0.85rem; 
-        padding: 4px 0;
-    }
+    .nav-menu { display: flex; gap: 10px; overflow-x: auto; max-width: 55%; padding-bottom: 5px; }
+    .nav-menu a { margin-right: 10px; font-size: 0.9rem; white-space: nowrap; }
 }
