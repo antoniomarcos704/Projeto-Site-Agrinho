@@ -56,6 +56,20 @@ Cuidar, Proteger e Curar o Solo com o nome da imagem: carousel-4.jpg
 Produtividade de Alta Performance com o nome da imagem: carousel-5.jpg
 9. Prompt: A breathtaking, sweeping panoramic view of a massive, successful wheat harvest under a clear blue sky. Healthy, golden-yellow crops stretching to the horizon. A modern combine harvester works efficiently in the distance, leaving a clean trail. Prosperity, clean energy, high-performance sustainable agro, photorealistic, 8k resolution.
 
+agro-hero.jpg: 
+10."A beautiful panoramic photo of a high-tech plantation (e.g., a drone flying over a cornfield at sunset)."
+
+trator-impacto.jpg: 
+11."An image of a heavy tractor tilling muddy ground or visibly compacted/cracked soil."
+
+solo-regenerado.jpg: 
+12."A close-up photo of dark earth rich in organic matter, featuring healthy green sprouts (or an earthworm in the soil)."
+
+plantio-direto.jpg: 
+13."A photo of crop residue straw covering the ground with new crops emerging through it."
+
+rotacao-culturas.jpg: 
+14. "An aerial view of strip-intercropped fields featuring different plant species."
 
 ##  Estrutura de Arquivos
 
