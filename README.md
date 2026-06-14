@@ -41,20 +41,20 @@ Semeando
 Noturna
 3.An agricultural drone operating at twilight, dusk sky with deep blue and orange hues. The drone has subtle glowing navigation lights and is mapping the crop field below with a visible soft laser or multi-spectral sensor beam scanning the plants. Futuristic yet realistic smart farming, high contrast, crisp details, 8k, aspect ratio 16:9. 
 
-Agro Forte, Futuro Sustentável
+Agro Forte, Futuro Sustentável com o nome da imagem: carousel-1.jpg
 4. Prompt: A wide shot of a futuristic, lush green soybean plantation during a golden hour sunset. A sleek, high-tech autonomous tractor operates smoothly in the background. In the foreground, rich organic soil with hints of digital data overlays glowing softly. Sustainable agriculture concept, photorealistic, cinematic lighting, 8k resolution, UHD.
 
-A Voz do Chão que Pisamos
+A Voz do Chão que Pisamos: com o nome da imagem: carousel-2.jpg
 5. Prompt: A heartwarming photo of a young smiling student and an old experienced farmer kneeling together in a vibrant, healthy crop field. They are both gently holding a handful of dark, rich, fertile soil filled with life. Bright, warm morning sunlight, emotional atmosphere, crisp focus, highly detailed, photorealistic, 8k resolution.
 
-Inteligência a Serviço da Natureza
+Inteligência a Serviço da Natureza com o nome da imagem: carousel-3.jpg
 6. Prompt: An advanced agricultural drone flying low over an expansive, ultra-green cornfield. The drone is precision-spraying a fine mist of water on a specific spot. Sharp daylight, clean composition, high-tech farming, capturing motion blur in the mist, photorealistic, 35mm lens, 8k resolution, ultra high definition.
-Cuidar, Proteger e Curar o Solo
 
-7. A close-up, low-angle shot of perfect No-Till farming (Plantio Direto). Strong, healthy green sprouts emerging directly from a thick layer of protective dry organic straw covering the ground. Visible rich soil texture beneath the straw. Soft, diffused natural light, depth of field, cinematic, 8k resolution, UHD.
-Produtividade de Alta Performance
+Cuidar, Proteger e Curar o Solo com o nome da imagem: carousel-4.jpg
+7. Prompt: A close-up, low-angle shot of perfect No-Till farming (Plantio Direto). Strong, healthy green sprouts emerging directly from a thick layer of protective dry organic straw covering the ground. Visible rich soil texture beneath the straw. Soft, diffused natural light, depth of field, cinematic, 8k resolution, UHD.
 
-9. A breathtaking, sweeping panoramic view of a massive, successful wheat harvest under a clear blue sky. Healthy, golden-yellow crops stretching to the horizon. A modern combine harvester works efficiently in the distance, leaving a clean trail. Prosperity, clean energy, high-performance sustainable agro, photorealistic, 8k resolution.
+Produtividade de Alta Performance com o nome da imagem: carousel-5.jpg
+9. Prompt: A breathtaking, sweeping panoramic view of a massive, successful wheat harvest under a clear blue sky. Healthy, golden-yellow crops stretching to the horizon. A modern combine harvester works efficiently in the distance, leaving a clean trail. Prosperity, clean energy, high-performance sustainable agro, photorealistic, 8k resolution.
 
 
 ##  Estrutura de Arquivos
