@@ -1,5 +1,5 @@
 // ==========================================================================
-// 1. DICIONÁRIO DE IDIOMAS (ATUALIZADO - VERSÃO CONCURSO AGRINHO)
+// 1. DICIONÁRIO DE IDIOMAS (ATUALIZADO COM OS NOVOS TEXTOS TÉCNICOS DA EMBRAPA)
 // ==========================================================================
 const translations = {
     pt: {
@@ -13,7 +13,7 @@ const translations = {
         "slide5-title": "Produtividade de Alta Performance", "slide5-desc": "Preservar o meio ambiente não reduz colheitas; garante a alimentação do amanhã.",
         "boasvindas-title": "Bem-vindo à Jornada do Agro Sustentável", "boasvindas-desc": "Explore nossa plataforma e entenda como a união entre os saberes da terra e as tecnologias do amanhã moldarão o destino do nosso planeta.",
         "sobre-title": "O Propósito Educacional: Por que existimos?", "sobre-subtitle": "O solo não é apenas terra sob nossos pés. Ele é o coração pulsante da vida no planeta.",
-        "sobre-motivacional": "Diariamente, ações impensadas e o manejo incorreto degradam toneladas de solos férteis através da erosão e da compactação mecânica. Este espaço nasceu como um manifesto educacional para o Concurso Agrinho. Nosso objetivo vai muito além de informar: queremos tocar corações e despertar mentes para a urgente missão de restaurar a saúde do nosso chão. Amar a terra é proteger nossa própria existência! Para isso, apresentaremos aqui as melhores técnicas de manejo e uso do solo, destacando os pilares da agricultura regenerativa e os avanços da agricultura de precisão.",
+        "sobre-motivacional": "Diariamente, ações impensadas e o manejo incorreto degradam toneladas de solos férteis através da erosão e da compactação mecânica. Este espaço nasceu como um manifesto educacional para o Concurso Agrinho. Nosso objetivo vai muito além de informar: queremos tocar corações e despertar mentes para a urgente missão de restaurar a saúde do nosso chão. Amar a terra é proteger nossa própria existência!",
         "impacto-title": "O Alerta: O Peso que Sufoca", "impacto-desc": "O tráfego de tratores pesados esmaga as estruturas do solo, expulsando o ar e impedindo a água de penetrar. Raízes fracas geram plantas frágeis. Reconhecer o erro é o primeiro passo para a mudança.",
         "solucao-title": "A Esperança: A Cura pela Natureza", "solucao-desc": "Quando adotamos técnicas ecológicas, damos à terra a chance de respirar novamente. Um solo rico em biodiversidade armazena água, mitiga secas, captura carbono e floresce em fartura.",
         "tec-tag": "Inovação Digital", "tec-title": "Alta Tecnologia a Favor do Campo", "tec-subtitle": "Drones, inteligência de dados e conectividade moldando tomadas de decisões rápidas, inteligentes e sustentáveis.",
@@ -31,7 +31,7 @@ const translations = {
         "regen-metrics-title": "Impacto Mensurável na Regeneração do Ecossistema",
         "m1": "Economia de Água", "m2": "Redução de Carbono", "m3": "Mais Saúde do Solo",
         "precisao-title": "Inovações na Agricultura de Precisão", "precisao-subtitle": "Tecnologia de ponta moldando uma nova era de eficiência e preservação no agronegócio.",
-        "precisao-p-main": "Os drones revolucionaram o setor agrícola brasileiro, substituindo gradativamente tarefas pesadas e reduzindo impactos ambientais drásticos. Suas principais vantagens incluem uma otimização radical dos recursos hídricos, eliminação do esmagamento mecânico de culturas e a capacidade de intervir com precisão cirúrgica em áreas complexas, conforme detalhado a seguir: [1, 2]",
+        "precisao-p-main": "Os drones revolucionaram o setor agrícola brasileiro, substituindo gradativamente tarefas pesadas e reduzindo impactos ambientais drásticos. Suas principais vantagens incluem: [1, 2]",
         "drone-v1-title": "Economia Hídrica", "drone-v1-desc": "Podem reduzir o uso de água em até 95% em comparação com os pulverizadores terrestres convencionais.",
         "drone-v2-title": "Sem Amassamento", "drone-v2-desc": "Como flutuam sobre a plantação, evitam completamente a perda física de plantas por pisoteio de pneus.",
         "drone-v3-title": "Acesso Total", "drone-v3-desc": "Operam perfeitamente em áreas montanhosas, encostas inclinadas e locais inacessíveis para tratores.",
@@ -53,7 +53,7 @@ const translations = {
         "slide5-title": "High-Performance Productivity", "slide5-desc": "Preserving the environment does not reduce harvests; it secures tomorrow's food supply.",
         "boasvindas-title": "Welcome to the Sustainable Agro Journey", "boasvindas-desc": "Explore our platform and understand how the union of earth knowledge and tomorrow's technology will shape our planet.",
         "sobre-title": "The Educational Purpose: Why do we exist?", "sobre-subtitle": "Soil is not just dirt under our feet. It is the beating heart of life on earth.",
-        "sobre-motivacional": "Daily, thoughtless actions and incorrect management degrade tons of fertile soil through erosion and compaction. This space was born as an educational manifesto for the Agrinho Contest. Our goal goes far beyond informing: we want to touch hearts and awaken minds to restore our ground. Loving the earth is protecting our own existence! To achieve this, we will present here the best soil management and land-use techniques, highlighting the pillars of regenerative agriculture and the breakthroughs of precision farming.",
+        "sobre-motivacional": "Daily, thoughtless actions and incorrect management degrade tons of fertile soil through erosion and compaction. This space was born as an educational manifesto for the Agrinho Contest. Our goal goes far beyond informing: we want to touch hearts and awaken minds to restore our ground. Loving the earth is protecting our own existence!",
         "impacto-title": "The Alert: The Weight That Suffocates", "impacto-desc": "Heavy machinery traffic crushes soil structures, forcing air out and blocking water. Weak roots make weak crops. Recognizing mistakes is the first step to change.",
         "solucao-title": "The Hope: Healing Through Nature", "solucao-desc": "When we adopt ecological techniques, we give the earth a chance to breathe again. A biodiverse soil stores water, mitigates droughts, captures carbon, and thrives.",
         "tec-tag": "Digital Innovation", "tec-title": "High Technology for the Fields", "tec-subtitle": "Drones, data, and precision for smart and sustainable decision-making.",
@@ -61,14 +61,17 @@ const translations = {
         "tech2-title": "Data Decisions", "tech2-desc": "Intelligent algorithms process field data in real-time. Producers visualize heatmaps and predictive reports right from their hands.",
         "tech3-title": "Smart Applications", "tech3-desc": "Telemetry systems guide surgical spraying. Resources are only applied where necessary, shielding the ecosystem and avoiding waste.",
         "prat-title": "Regenerative Farming Practices", "prat-subtitle": "Small coordinated actions that generate big transformations in crop health.",
+        
+        // VERSÕES INTERNACIONAIS TRADUZIDAS COM O MESMO COMPRIMENTO/CONTEXTO TÉCNICO
         "p1-title": "No-Till Farming", 
         "p1-desc": "Considered the greatest conservationist revolution in tropical agriculture, the No-Till System (NTS) eliminates traditional plowing and harrowing operations, which disrupt the aggregated structure of the earth. Sowing occurs directly over the residues of the previous harvest, establishing a permanent mulch. According much to technical data from Embrapa, this phytomass layer acts as a thermal shield, decreasing direct water evaporation and mitigating temperature fluctuations within the soil profile. Furthermore, it mechanically dampens the kinetic impact of raindrops (the 'splash' effect), drastically reducing soil losses from water erosion by up to 90% while promoting the continuous increase of organic matter and Cation Exchange Capacity (CEC).",
         "p2-title": "Crop Rotation", 
         "p2-desc": "Distinct from simple crop succession (such as the continuous soy-corn cycle), Crop Rotation consists of the planned alternation of different plant species over time in the same area. The technical foundation requires combining plants with distinct root systems, intercropping grasses with deep fibrous roots (such as brachiaria and millet) alongside legumes with taproots. This process promotes a natural biological decompaction of the soil through the opening of macropores, improving the deep water infiltration rate. Scientifically, rotation interrupts the life cycle of host phytopathogens and nematodes, reduces weed pressure via allelopathy, and optimizes nutrient cycling by extracting minerals from different strata, elevating stability.",
+        
         "regen-metrics-title": "Measurable Impact on Ecosystem Regeneration",
         "m1": "Water Savings", "m2": "Carbon Reduction", "m3": "Better Soil Health",
         "precisao-title": "Innovations in Precision Agriculture", "precisao-subtitle": "State-of-the-art technology shaping a new era of efficiency and preservation in agribusiness.",
-        "precisao-p-main": "Drones have revolutionized the Brazilian agricultural sector, gradually replacing heavy machinery and reducing drastic environmental impacts. Their main advantages include a radical optimization of water resources, complete elimination of crop trampling, and the capacity to operate with surgical precision in challenging environments, as detailed below: [1, 2]",
+        "precisao-p-main": "Drones have revolutionized the Brazilian agricultural sector, gradually replacing heavy machinery and reducing drastic environmental impacts. Their main advantages include: [1, 2]",
         "drone-v1-title": "Water Economy", "drone-v1-desc": "They can reduce water use by up to 95% compared to conventional ground sprayers.",
         "drone-v2-title": "No Trampling", "drone-v2-desc": "As they float above the crops, they completely avoid physical plant damage from tires.",
         "drone-v3-title": "Total Access", "drone-v3-desc": "They operate perfectly in mountainous areas, steep slopes, and places inaccessible to tractors.",
@@ -90,7 +93,7 @@ const translations = {
         "slide5-title": "Productividad de Alto Rendimiento", "slide5-desc": "Preservar el medio ambiente no reduce las cosechas; garantiza la alimentación del mañana.",
         "boasvindas-title": "Bienvenido a la Jornada del Agro Sostenible", "boasvindas-desc": "Explore nuestra plataforma y comprenda cómo la unión de los saberes de la tierra y las tecnologías del mañana moldearán nuestro planeta.",
         "sobre-title": "El Propósito Educativo: ¿Por qué existimos?", "sobre-subtitle": "El suelo no es sólo tierra bajo nuestros pies. Es el corazón palpitante de la vida en el planeta.",
-        "sobre-motivacional": "Diariamente, acciones irresponsables y manejos incorrectos degradan toneladas de suelos fértiles por erosión y compactación. Este espacio nació como un manifiesto educativo para el Concurso Agrinho. Nuestro objetivo va más allá de informar: ¡queremos tocar corazones y despertar mentes para restaurar nuestro suelo! ¡Amar la tierra es proteger nuestra existencia! Por ello, presentaremos aquí las mejores técnicas de manejo y uso del suelo, destacando los pilares de la agricultura regenerativa y los avances de la agricultura de precisión.",
+        "sobre-motivacional": "Diariamente, acciones irresponsables y manejos incorrectos degradan toneladas de suelos fértiles por erosión y compactación. Este espacio nació como un manifiesto educativo para el Concurso Agrinho. Nuestro objetivo va más allá de informar: ¡queremos tocar corazones y despertar mentes para restaurar nuestro suelo! ¡Amar la tierra es proteger nuestra existencia!",
         "impacto-title": "La Alerta: El Peso que Asfixia", "impacto-desc": "El tráfico de tractores pesados aplasta las estructuras del suelo, expulsando el aire y bloqueando el agua. Raíces débiles generan plantas frágiles. Reconocer el error es el primer paso.",
         "solucao-title": "La Esperanza: La Cura por la Naturaleza", "solucao-desc": "Cuando adoptamos técnicas ecológicas, le damos a la tierra la oportunidad de respirar. Un suelo rico en biodiversidad almacena agua, mitiga sequías, captura carbono y florece.",
         "tec-tag": "Innovación Digital", "tec-title": "Alta Tecnología a Favor del Campo", "tec-subtitle": "Drones, datos y precisión para la toma de decisiones inteligentes y sostenibles.",
@@ -98,14 +101,17 @@ const translations = {
         "tech2-title": "Decisiones con Datos", "tech2-desc": "Algoritmos inteligentes procesan datos del campo en tiempo real. Los productores visualizan mapas de calor e informes predictivos directamente en la palma de su mano.",
         "tech3-title": "Aplicaciones Inteligentes", "tech3-desc": "Sistemas de telemetria guían pulverizaciones quirúrgicas. Los insumos se aplican solo donde es necesario, protegiendo el ecosistema y evitando desperdicios.",
         "prat-title": "Práticas de Agricultura Regenerativa", "prat-subtitle": "Pequeñas acciones coordenadas que generan grandes transformaciones en la salud del cultivo.",
+        
+        // VERSÕES INTERNACIONAIS TRADUZIDAS COM O MESMO COMPRIMENTO/CONTEXTO TÉCNICO
         "p1-title": "Siembra Directa", 
         "p1-desc": "Considerada la mayor revolución conservacionista de la agricultura tropical, el Sistema de Siembra Directa (SSD) elimina las operaciones tradicionales de arado y rastrillado, que rompen la estructura agregada de la tierra. La siembra se realiza directamente sobre los residuos de la cosecha anterior, estableciendo un mantillo permanente. Según datos técnicos de Embrapa, esta capa de fitomasa actúa como un escudo térmico, disminuyendo la evaporación directa del agua y mitigando las oscilaciones térmicas en el perfil del suelo. Además, amortigua mecánicamente el impacto cinético de las gotas de lluvia (efecto 'splash'), reduciendo drásticamente las pérdidas de suelo por erosión hídrica hasta en un 90% y promoviendo el incremento continuo de materia orgánica y Capacidad de Intercambio Catiónico (CIC).",
         "p2-title": "Rotación de Cultivos", 
-        "p2-desc": "A diferencia de la sucesión simple (como el ciclo continuo soja-maíz), la Rotación de Cultivos consiste en la alternancia planificada de diferentes especies vegetales a lo largo del tiempo en una misma superficie. El fundamento técnico exige el consorcio entre plantas con sistemas raíces distintos, intercalando gramíneas con raíces fasciculadas profundas (como la braquiaria y el mijo) junto con leguminosas de raíz pivotante. Este proceso promueve una descompactación biológica natural del suelo mediante la apertura de macroporos, mejorando la tasa de infiltración hídrica profunda. Científicamente, la rotación interrumpe el ciclo biológico de fitopatógenos y nematodos hospedadores, reduce la presión de malezas por alelopatía y optimiza el ciclo de nutrientes.",
+        "p2-desc": "A diferencia de la sucesión simple (como el ciclo continuo soja-maíz), la Rotación de Cultivos consiste en la alternancia planificada de diferentes especies vegetales a lo largo del tiempo en una misma superficie. El fundamento técnico exige el consorcio entre plantas con sistemas radiculares distintos, intercalando gramíneas con raíces fasciculadas profundas (como la braquiaria y el mijo) junto con leguminosas de raíz pivotante. Este proceso promueve una descompactación biológica natural del suelo mediante la apertura de macroporos, mejorando la tasa de infiltración hídrica profunda. Científicamente, la rotación interrumpe el ciclo biológico de fitopatógenos y nematodos hospedadores, reduce la presión de malezas por alelopatía y optimiza el ciclo de nutrientes.",
+        
         "regen-metrics-title": "Impacto Medible en la Regeneración del Ecosistema",
         "m1": "Ahorro de Agua", "m2": "Reducción de Carbono", "m3": "Mejor Salud del Suelo",
         "precisao-title": "Innovaciones en Agricultura de Precisión", "precisao-subtitle": "Tecnología de vanguardia que da forma a una era de eficiencia y preservación en el sector agrícola.",
-        "precisao-p-main": "Los drones revolucionaron el sector agrícola brasileiro, sustituyendo gradualmente tareas pesadas y reduciendo drásticos impactos ambientales. Sus principales ventajas incluyen una optimización radical de recursos hídricos, la eliminación completa del aplastamiento de cultivos y la capacidad de operar con precisión quirúrgica en entornos desafiantes, como se detalla a continuación: [1, 2]",
+        "precisao-p-main": "Los drones revolucionaron el sector agrícola brasileiro, sustituyendo gradualmente tareas pesadas y reduciendo drásticos impactos ambientales. Sus principales ventajas incluyen: [1, 2]",
         "drone-v1-title": "Economía Hídrica", "drone-v1-desc": "Pueden reducir el uso de agua hasta en un 95% en comparación con los pulverizadores terrestres convencionales.",
         "drone-v2-title": "Sin Aplastamiento", "drone-v2-desc": "Como vuelan sobre la plantación, evitan por completo la pérdida física de plantas por pisoteio de neumáticos.",
         "drone-v3-title": "Acceso Total", "drone-v3-desc": "Operan perfectamente en áreas montañosas, laderas inclinadas y lugares inaccesibles para tractores.",
@@ -113,7 +119,7 @@ const translations = {
         "info-title": "Contribución Ecológica y Sostenibilidad", "info-water": "Redução do Consumo de Água Potável", "info-damage": "Preservação contra Amassamento do Solo", "info-carbon": "Redução na Emissão de Carbono (Combustível)",
         "contato-title": "Contacto", "contato-subtitle": "Póngase en contacto con nosotros",
         "label-nome": "Nombre", "label-email": "E-mail", "label-msg": "Mensagem", "btn-enviar": "Enviar",
-        "footer-rights": "Todos os direitos reservados.",
+        "footer-rights": "Todos los derechos reservados.",
         "placeholder-nome": "", "placeholder-email": "", "placeholder-msg": ""
     }
 };
@@ -165,6 +171,7 @@ logoHome.addEventListener('click', (e) => {
 });
 
 document.querySelector('.nav-menu a[href="#inicio"]').classList.add('active-link');
+
 
 // ==========================================================================
 // 3. MECÂNICA DO CARROSSEL DE IMAGENS
@@ -226,6 +233,7 @@ if(nextBtn && prevBtn) {
     resetCarouselTimer();
 }
 
+
 // ==========================================================================
 // 4. ALTERNADOR DE TEMA (DARK / LIGHT MODE)
 // ==========================================================================
@@ -243,6 +251,7 @@ themeToggleBtn.addEventListener('click', () => {
         localStorage.setItem('theme', 'light');
     }
 });
+
 
 // ==========================================================================
 // 5. TRADUTOR DINÂMICO
@@ -270,7 +279,9 @@ function changeLanguage(lang) {
     });
 }
 
+// Inicializa a página carregando o dicionário em português
 changeLanguage('pt');
+
 
 // ==========================================================================
 // 6. FORMULÁRIO DE CONTATO
